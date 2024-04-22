@@ -1,0 +1,61 @@
+.search-input {
+  max-width: 512px;
+  height: 48px;
+  font-family: 'SF-Pro-Display-Medium';
+
+  cursor: url('../../assets/images/hand.png'), pointer;
+
+  .ant-input-outlined {
+    background-color: #eeeeee;
+    height: 48px;
+  }
+
+  .ant-input-affix-wrapper-focused,
+  .ant-input-outlined,
+  .ant-input-outlined:focus,
+  .ant-input-search .ant-input:focus,
+  .ant-input-search .ant-input:hover,
+  .ant-input-outlined:hover {
+    border-color: unset;
+    box-shadow: none;
+    border: none;
+  }
+
+  .ant-input-group .ant-input-affix-wrapper:not(:last-child) {
+    border-radius: 12px;
+  }
+  ::placeholder {
+    font-size: 16px;
+    color: #9c9c9c;
+    font-family: 'SF Pro';
+  }
+  .ant-input-clear-icon {
+    cursor: url('../../assets/images/hand.png'), pointer;
+  }
+  .ant-input-clear-icon svg path {
+    font-size: 24px;
+  }
+}
+
+.ant-input-outlined:hover {
+  background-color: #e6e6e6;
+}
+
+.search-button {
+  width: 82px;
+  margin-left: 10px;
+  height: 48px !important;
+  background: #eb0c0c !important;
+  border-radius: 12px !important;
+}
+
+.search-button:hover {
+  background: #c30000 !important;
+  cursor: url('../../assets/images/hand.png'), pointer;
+}
+
+@media (max-width: 768px) {
+  .search-button {
+    margin-left: 8px;
+  }
+}

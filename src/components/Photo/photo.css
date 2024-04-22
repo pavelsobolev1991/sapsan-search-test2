@@ -1,0 +1,21 @@
+.photo-wrapper {
+  .ant-image {
+    width: 204px;
+    height: 204px;
+  }
+  .ant-image img {
+    height: 204px;
+  }
+}
+
+@media (max-width: 768px) {
+  .photo-wrapper {
+    .ant-image {
+      width: 114px;
+      height: 114px;
+    }
+    .ant-image img {
+      height: 114px;
+    }
+  }
+}
