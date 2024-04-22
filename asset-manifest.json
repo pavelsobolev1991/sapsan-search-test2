@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/sapsan-search-test2/static/css/main.260cc6a8.css",
+    "main.js": "/sapsan-search-test2/static/js/main.38d61984.js",
+    "static/media/SFProDisplay-Medium.woff": "/sapsan-search-test2/static/media/SFProDisplay-Medium.7274e74c05adf47dbcd9.woff",
+    "index.html": "/sapsan-search-test2/index.html",
+    "main.260cc6a8.css.map": "/sapsan-search-test2/static/css/main.260cc6a8.css.map",
+    "main.38d61984.js.map": "/sapsan-search-test2/static/js/main.38d61984.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.260cc6a8.css",
+    "static/js/main.38d61984.js"
+  ]
+}
