@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef, useEffect, useState } from 'react';
 import { Flex } from 'antd';
 import SearchInput from '../../components/Input';
 import './search.css';
@@ -8,17 +8,14 @@ type SearchProps = {
   handleSearch: (value: string) => void;
 };
 
-const SearchField: React.FC<SearchProps> = ({
-  query,
-  handleSearch,
-}) => {
+const SearchField: React.FC<SearchProps> = ({ query, handleSearch }) => {
   return (
     <Flex
       wrap="wrap"
       gap="small"
       className={query ? 'search-active' : 'search'}
     >
-      <SearchInput handleSearch={handleSearch}/>
+      <SearchInput handleSearch={handleSearch} />
     </Flex>
   );
 };

@@ -10,11 +10,7 @@ type EmptyResultsProps = {
 
 const EmptyResults: React.FC<EmptyResultsProps> = ({ isLoading }) =>
   !isLoading ? (
-    <Typography>
-      <Text className="empty-results">
-        К сожалению, поиск не дал результатов
-      </Text>
-    </Typography>
+    <Text className="empty-results">К сожалению, поиск не дал результатов</Text>
   ) : null;
 
 export default EmptyResults;

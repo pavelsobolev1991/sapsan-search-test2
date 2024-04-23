@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import SearchResults from '../SearchResults';
 import SearchField from '../SearchField';
 import useSearchData from '../../hooks /useSearchData';
@@ -6,11 +6,7 @@ import useSearchData from '../../hooks /useSearchData';
 function Search() {
   const [query, setQuery] = useState('');
   const [pageNumber, setPageNumber] = useState(1);
-  const { isLoading, results, hasMore } = useSearchData(
-    query,
-    pageNumber
-  );
-
+  const { isLoading, results, hasMore } = useSearchData(query, pageNumber);
   const observer = useRef<IntersectionObserver | null>(null);
   const lastPhotoRef = useCallback(
     (node: HTMLImageElement) => {
@@ -25,7 +21,7 @@ function Search() {
     },
     [isLoading, hasMore]
   );
-  
+
 
   const handleSearch = (value: string) => {
     if (value) {

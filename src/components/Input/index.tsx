@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Button, Form, Input } from 'antd';
 import './input.css';
-import { SearchOutlined } from '@ant-design/icons';
+import { SearchOutlined, CloseCircleFilled } from '@ant-design/icons';
 
 type SearchInputProps = {
   handleSearch: (value: string) => void;
@@ -27,7 +27,11 @@ const SearchInput: React.FC<SearchInputProps> = ({ handleSearch }) => {
       enterButton={searchBtn}
       size="large"
       className="search-input"
-      allowClear
+      allowClear={{
+        clearIcon: (
+          <CloseCircleFilled className="closeIcon"></CloseCircleFilled>
+        ),
+      }}
     />
   );
 };

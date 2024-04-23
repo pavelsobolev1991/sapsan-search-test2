@@ -1,3 +1,12 @@
-.search-results-wrapper {
-  padding-top: 40px;
- }
+.gallery {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(204px, 1fr));
+  padding-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(114px, 3fr));
+  }
+}

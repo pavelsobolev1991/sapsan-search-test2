@@ -29,11 +29,22 @@
     color: #9c9c9c;
     font-family: 'SF Pro';
   }
-  .ant-input-clear-icon {
+  .closeIcon {
     cursor: url('../../assets/images/hand.png'), pointer;
   }
+  .ant-input-affix-wrapper,
+  .ant-input-suffix {
+    margin-inline-start: 0px;
+  }
+  .ant-input-clear-icon {
+    padding-top: 4px;
+  }
+  .ant-input-clear-icon svg {
+    width: 16px;
+    height: 16px;
+  }
   .ant-input-clear-icon svg path {
-    font-size: 24px;
+    fill: rgba(196, 196, 196, 1);
   }
 }
 

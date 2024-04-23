@@ -1,8 +1,9 @@
 import React, { forwardRef } from 'react';
-import { Flex } from 'antd';
+import { Flex, List, Image } from 'antd';
 import Photo from '../../components/Photo';
 import EmptyResults from '../../components/EmptyResults';
 import './searchResults.css';
+import SearchField from '../SearchField';
 
 interface SearchResultsProps {
   results: SearchAPI.Result[];
@@ -14,23 +15,19 @@ const SearchResults: React.ForwardRefRenderFunction<
   SearchResultsProps
 > = ({ results, isLoading }, ref) => {
   return (
-    <Flex
-      wrap="wrap"
-      gap="small"
-      className="search-results-wrapper"
-    >
+    <div className="gallery">
       {results?.length ? (
-        results.map((data, index) => {
+        results?.map((data, index) => {
           if (results.length === index + 1) {
-            return <Photo ref={ref} key={data.id} src={data.urls} />;
+            return <Photo ref={ref} photoKey={data.id} src={data.urls} />;
           } else {
-            return <Photo key={data.id} src={data.urls} />;
+            return <Photo photoKey={data.id} src={data.urls} />;
           }
         })
       ) : (
         <EmptyResults isLoading={isLoading} />
       )}
-    </Flex>
+    </div>
   );
 };
 

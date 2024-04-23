@@ -1,21 +1,12 @@
-.photo-wrapper {
-  .ant-image {
-    width: 204px;
-    height: 204px;
-  }
-  .ant-image img {
-    height: 204px;
-  }
+.ant-image {
+  position: relative;
+  height: 204px;
+  width: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
-  .photo-wrapper {
-    .ant-image {
-      width: 114px;
-      height: 114px;
-    }
-    .ant-image img {
-      height: 114px;
-    }
+  .ant-image {
+    height: 114px;
   }
 }
