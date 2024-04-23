@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/sapsan-search-test2/static/css/main.0b87a894.css",
+    "main.css": "/sapsan-search-test2/static/css/main.c96b9d91.css",
     "main.js": "/sapsan-search-test2/static/js/main.89f9a5f4.js",
     "static/media/SFProDisplay-Medium.woff": "/sapsan-search-test2/static/media/SFProDisplay-Medium.7274e74c05adf47dbcd9.woff",
     "index.html": "/sapsan-search-test2/index.html",
-    "main.0b87a894.css.map": "/sapsan-search-test2/static/css/main.0b87a894.css.map",
+    "main.c96b9d91.css.map": "/sapsan-search-test2/static/css/main.c96b9d91.css.map",
     "main.89f9a5f4.js.map": "/sapsan-search-test2/static/js/main.89f9a5f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b87a894.css",
+    "static/css/main.c96b9d91.css",
     "static/js/main.89f9a5f4.js"
   ]
 }
