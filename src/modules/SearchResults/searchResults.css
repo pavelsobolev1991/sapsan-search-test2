@@ -1,12 +1,12 @@
 .gallery {
-  display: grid;
-  grid-gap: 8px;
-  grid-template-columns: repeat(auto-fit, minmax(204px, 1fr));
-  padding-top: 16px;
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(114px, 3fr));
-  }
+.empty-gallery {
+  justify-content: flex-start;
 }

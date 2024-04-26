@@ -11,7 +11,6 @@ const imageStyles: React.CSSProperties = {
   objectFit: 'cover',
   border: '1px solid #EBEBEB',
   borderRadius: '4px',
-  height: '100%',
   cursor: 'pointer',
 };
 
@@ -34,7 +33,6 @@ const Photo: React.ForwardRefRenderFunction<HTMLImageElement, PhotoProps> = (
   const [isPreviewVisible, setPreviewVisible] = useState<boolean>(false);
   return (
     <div ref={ref} key={photoKey} className="photo-wrapper">
-      {/* <Card> */}
         <Image
           loading="eager"
           src={src.regular}
@@ -42,7 +40,6 @@ const Photo: React.ForwardRefRenderFunction<HTMLImageElement, PhotoProps> = (
           preview={previewProperties(isPreviewVisible, setPreviewVisible)}
           style={imageStyles}
         />
-      {/* </Card> */}
     </div>
   );
 };

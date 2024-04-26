@@ -1,12 +1,11 @@
-.ant-image {
-  position: relative;
+.ant-image .ant-image-img {
+  width: 204.17px;
   height: 204px;
-  width: 100%;
-  overflow: hidden;
 }
 
 @media (max-width: 768px) {
-  .ant-image {
+  .ant-image .ant-image-img {
+    width: 114px;
     height: 114px;
   }
 }

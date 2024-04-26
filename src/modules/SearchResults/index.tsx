@@ -15,7 +15,7 @@ const SearchResults: React.ForwardRefRenderFunction<
   SearchResultsProps
 > = ({ results, isLoading }, ref) => {
   return (
-    <div className="gallery">
+    <div className={results.length ? "gallery" : "empty-gallery"}>
       {results?.length ? (
         results?.map((data, index) => {
           if (results.length === index + 1) {
