@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/sapsan-search-test2/static/css/main.c96b9d91.css",
-    "main.js": "/sapsan-search-test2/static/js/main.89f9a5f4.js",
+    "main.css": "/sapsan-search-test2/static/css/main.0fc9bcba.css",
+    "main.js": "/sapsan-search-test2/static/js/main.1ede13a6.js",
     "static/media/SFProDisplay-Medium.woff": "/sapsan-search-test2/static/media/SFProDisplay-Medium.7274e74c05adf47dbcd9.woff",
     "index.html": "/sapsan-search-test2/index.html",
-    "main.c96b9d91.css.map": "/sapsan-search-test2/static/css/main.c96b9d91.css.map",
-    "main.89f9a5f4.js.map": "/sapsan-search-test2/static/js/main.89f9a5f4.js.map"
+    "main.0fc9bcba.css.map": "/sapsan-search-test2/static/css/main.0fc9bcba.css.map",
+    "main.1ede13a6.js.map": "/sapsan-search-test2/static/js/main.1ede13a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.c96b9d91.css",
-    "static/js/main.89f9a5f4.js"
+    "static/css/main.0fc9bcba.css",
+    "static/js/main.1ede13a6.js"
   ]
 }
